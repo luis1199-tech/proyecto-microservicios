@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+ proyectos-microservicio:
+  container_name: 'proyectos-microservicio'
+  image: proyectos-microservicio:v1
+  build:
+   context: .
+  ports:
+   - "5001:4000"
+  networks:
+   - proyectos
+networks:
+ proyectos:
+
+ 
