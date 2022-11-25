@@ -18,7 +18,7 @@ services:
    - proyectos-microservicio
   environment:
    CONTAINER_HOST: proyectos-microservicio01
-load-balancer:
+ load-balancer:
   container_name: 'load-balancer'
   image: load-balancer:v1
   build:
